@@ -143,7 +143,67 @@ export function AttendeeList() {
           </tr>
         </thead>
         <tbody>
-          {attendees.map((ateendee) => {
+        <TableRow>
+                <TableCell>
+                  <input
+                    type="checkbox"
+                    className="size-4 bg-black/20 rounded border border-white/10"
+                  />
+                </TableCell>
+                <TableCell>0001</TableCell>
+                <TableCell>
+                  <div className="flex flex-col gap-1">
+                    <span className="font-semibold text-white">
+                      Maju de Andrade Araújo
+                    </span>
+                    <span>teste@gmail.com.br</span>
+                  </div>
+                </TableCell>
+                <TableCell>há 10 minutos...</TableCell>
+                <TableCell>
+                    <span className="text-zinc-400"> Não fez check-in</span>
+                 
+                </TableCell>
+                <TableCell>
+                  <IconButton
+                    transparent
+                    className="bg-black/20 border border-white/10 rounded-md p-1.5"
+                  >
+                    <MoreHorizontal className="size-4" />
+                  </IconButton>
+                </TableCell>
+              </TableRow>   
+        <TableRow>
+                <TableCell>
+                  <input
+                    type="checkbox"
+                    className="size-4 bg-black/20 rounded border border-white/10"
+                  />
+                </TableCell>
+                <TableCell>0002</TableCell>
+                <TableCell>
+                  <div className="flex flex-col gap-1">
+                    <span className="font-semibold text-white">
+                      Alisson de Andrade Araújo
+                    </span>
+                    <span>teste@gmail.com.br</span>
+                  </div>
+                </TableCell>
+                <TableCell>há poucos minutos...</TableCell>
+                <TableCell>
+                    <span className="text-zinc-400">fez check-in</span>
+                 
+                </TableCell>
+                <TableCell>
+                  <IconButton
+                    transparent
+                    className="bg-black/20 border border-white/10 rounded-md p-1.5"
+                  >
+                    <MoreHorizontal className="size-4" />
+                  </IconButton>
+                </TableCell>
+              </TableRow>          
+            {attendees.map((ateendee) => {
             return (
               <TableRow key={ateendee.id}>
                 <TableCell>
@@ -178,6 +238,8 @@ export function AttendeeList() {
                   </IconButton>
                 </TableCell>
               </TableRow>
+              
+              
             );
           })}
         </tbody>
