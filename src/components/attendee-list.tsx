@@ -156,7 +156,7 @@ export function AttendeeList() {
                     <span className="font-semibold text-white">
                       Maju de Andrade Araújo
                     </span>
-                    <span>teste@gmail.com.br</span>
+                    <span>teste2@hotmail.com.br</span>
                   </div>
                 </TableCell>
                 <TableCell>há 10 minutos...</TableCell>
